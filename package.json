@@ -1,0 +1,10 @@
+{
+  "name": "arc-agent-guardrails",
+  "version": "0.1.0",
+  "description": "Guardrails for AI agents that move money on Arc: a fail-closed send gate, an outflow recorder, a vault exit-liquidity reader, an agent score rubric, and own-wallet browser widgets (ERC-4626 deposit, ERC-8004 rating).",
+  "license": "MIT",
+  "main": "src/send-gate.js",
+  "scripts": { "test": "node test/run.js" },
+  "dependencies": { "viem": "^2.57.1" },
+  "optionalDependencies": { "@circle-fin/earn-kit": "1.8.0" }
+}
