@@ -42,5 +42,9 @@ await recordSentEvm(hash, { source: 'gas-refill', chain: 'arc', wallets: [from],
 unknown sender, kill file, unreadable policy), the recorder's refusals, the browser encoders checked byte for byte against viem,
 and the score rubric. Break a rule in `src/send-gate.js` and a test fails: that is how we check the checks.
 
+The send gate guards OUR keys on our server. Its on-chain sibling for anyone is
+[arc-mandate](https://github.com/apexfaucet-hub/arc-mandate): a spending box on Arc whose contract enforces per-payment, per-day,
+payee and end-date limits on every payment an agent makes, by standard x402 (EIP-1271) or directly, with no admin and no fee.
+
 Part of the APEX Faucet treasury operator ([apex-treasury-operator](https://github.com/apexfaucet-hub/apex-treasury-operator)).
 MIT licensed.
